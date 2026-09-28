@@ -1,0 +1,7 @@
+__pycache__/
+*.pyc
+.ipynb_checkpoints/
+.venv/
+hf_cache/
+results/**/_shards_*/
+.env

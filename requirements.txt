@@ -1,0 +1,16 @@
+# Chạy notebook 02, 04, 05 và tests trên máy cá nhân (CPU).
+# Notebook 01 và 03 chạy trên Kaggle/Colab GPU; chúng tự cài MiniCheck (pin commit) và rank_bm25.
+numpy
+pandas
+scipy
+scikit-learn
+matplotlib
+nltk
+torch
+transformers
+sentencepiece
+protobuf
+datasets
+huggingface_hub
+rank_bm25
+sentence-transformers
