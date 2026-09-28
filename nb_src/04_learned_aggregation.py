@@ -189,7 +189,7 @@ plt.show()
 coef_params = BEST_PARAMS if BEST_KIND == "lr" else json.loads(
     cv_table[cv_table["kind"] == "lr"].iloc[0]["params"])
 coefs = lr_coefficients(dev, cols, coef_params)
-save_table(coefs.rename("coef").reset_index(names="feature"), f"aggregation/{MODEL_NAME}__lr_coefficients.csv")
+save_table(coefs.rename_axis("feature").reset_index(name="coef"), f"aggregation/{MODEL_NAME}__lr_coefficients.csv")
 display(coefs.round(3))
 
 # %%
